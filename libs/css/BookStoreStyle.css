@@ -1,0 +1,359 @@
+/* General Styling */
+:root {
+  --main-color:#7068d8;
+  --main-dark-color:#0c1824;
+  --grey-color: #f1f1f1
+;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+  background-color: rgba(12, 24, 36, 0.9);
+  padding: 0;
+  color: var(--main-dark-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 100;
+  color: white;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+  border-bottom: #7068d8 0.120em solid;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* End General Styling Page*/
+/* Start Login Page Styling*/
+form[action="BookStore.php"] {
+  margin: auto;
+  width: 50%;
+  background-color: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+form[action="BookStore.php"] .btn {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+form[action="BookStore.php"] .btn:hover {
+  background-color: var(--main-dark-color);
+  color: white;
+}
+/* End Login Page*/
+
+/* BookStoreHome Page*/
+/* header style */
+header {
+  background-color: white;
+  padding: .5rem 1rem;
+}
+
+header h2 {
+  color: var(--main-color);
+  font-weight: 900;
+  padding: .5rem;
+  margin: 0;
+  display: inline-block;
+}
+
+header .logout {
+  float: right;
+  height: 100%;
+  padding: .5rem;
+  border-left: 2px solid var(--grey-color);
+}
+
+header .logout button {
+  font-weight: bold;
+  border: none;
+}
+
+header .logout button i {
+  color: var(--main-color);
+  pointer-events: none;
+}
+
+section .contain, .edit-container .contain {
+  padding: 0;
+  margin: 1rem 3rem;
+}
+
+section .contain .header, .edit-container .contain .header {
+  padding: 1rem 0;
+}
+
+section .contain .header h3, .edit-container .contain .header h3 {
+  display: inline-block;
+  color: white;
+}
+
+section .contain .header .editbar, .edit-container .contain .header .editbar {
+  float: right;
+}
+
+section .contain .header .editbar .btn, .edit-container .contain .header .editbar .btn {
+  background-color: var(--main-color);
+  color: white;
+  padding: .5rem 1rem;
+}
+
+section .contain .header .editbar .btn i, .edit-container .contain .header .editbar .btn i {
+  font-size: .85rem;
+}
+
+section .contain .header .editbar button.add, .edit-container .contain .header .editbar button.add {
+  margin-right: .5rem;
+}
+
+section .contain .content, .edit-container .contain .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+section .contain .content .filter, .edit-container .contain .content .filter {
+  margin: 1rem 1rem 0 0;
+  background-color: white;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+section .contain .content .filter h4, .edit-container .contain .content .filter h4 {
+  padding: 1rem;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: .05rem;
+}
+
+section .contain .content .filter h4 i, .edit-container .contain .content .filter h4 i {
+  display: inline-block;
+  font-size: .85rem;
+}
+
+section .contain .content .filter input, .edit-container .contain .content .filter input {
+  width: 94%;
+  margin: 1rem 3%;
+}
+
+section .contain .content table, .edit-container .contain .content table {
+  color: white;
+  margin-top: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 72%;
+          flex: 0 0 72%;
+}
+
+section .contain .content table tbody tr th, section .contain .content table tbody tr td, section .contain .content table thead tr th, section .contain .content table thead tr td, .edit-container .contain .content table tbody tr th, .edit-container .contain .content table tbody tr td, .edit-container .contain .content table thead tr th, .edit-container .contain .content table thead tr td {
+  border: 1px solid white;
+  padding: 1rem .5rem;
+}
+
+section .contain .content table tbody tr td:nth-child(1), section .contain .content table thead tr td:nth-child(1), .edit-container .contain .content table tbody tr td:nth-child(1), .edit-container .contain .content table thead tr td:nth-child(1) {
+  width: 2%;
+}
+
+section .contain .content table tbody tr td:last-child, section .contain .content table thead tr td:last-child, .edit-container .contain .content table tbody tr td:last-child, .edit-container .contain .content table thead tr td:last-child {
+  text-align: right;
+}
+
+section .contain .content table tbody tr td button.edit, section .contain .content table thead tr td button.edit, .edit-container .contain .content table tbody tr td button.edit, .edit-container .contain .content table thead tr td button.edit {
+  background-color: white;
+}
+
+section .contain .content table tbody tr td button.edit i, section .contain .content table thead tr td button.edit i, .edit-container .contain .content table tbody tr td button.edit i, .edit-container .contain .content table thead tr td button.edit i {
+  color: var(--main-dark-color);
+}
+
+section .contain .content table tbody tr td table#product-order, section .contain .content table thead tr td table#product-order, .edit-container .contain .content table tbody tr td table#product-order, .edit-container .contain .content table thead tr td table#product-order {
+  width: 100%;
+  margin: auto;
+}
+
+section .contain .content table tbody tr .action, section .contain .content table thead tr .action, .edit-container .contain .content table tbody tr .action, .edit-container .contain .content table thead tr .action {
+  text-align: right;
+}
+
+section .contain .content table tbody tr.deleted-element, .edit-container .contain .content table tbody tr.deleted-element {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+}
+
+section .contain .content .product, .edit-container .contain .content .product {
+  background-color: unset;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 72%;
+          flex: 0 0 72%;
+  margin: 1rem;
+  border: none;
+  padding: 0;
+}
+
+section .contain .content .product ul.ui-tabs-nav, .edit-container .contain .content .product ul.ui-tabs-nav {
+  padding: 0;
+  background-color: unset;
+  border: none;
+}
+
+section .contain .content .product ul.ui-tabs-nav li, .edit-container .contain .content .product ul.ui-tabs-nav li {
+  border: none;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+
+section .contain .content .product ul.ui-tabs-nav li.ui-tabs-active, .edit-container .contain .content .product ul.ui-tabs-nav li.ui-tabs-active {
+  background-color: var(--main-color);
+}
+
+section .contain .content .product #books, section .contain .content .product #tools, section .contain .content .product #ProSa, .edit-container .contain .content .product #books, .edit-container .contain .content .product #tools, .edit-container .contain .content .product #ProSa {
+  padding: 0;
+}
+
+section .contain .content .product #books table,
+ section .contain .content .product #tools table,
+ section .contain .content .product #ProSa table,
+ .edit-container .contain .content .product #books table, 
+.edit-container .contain .content .product #tools table,
+.edit-container .contain .content .product #ProSa table
+ {
+  display: block;
+}
+
+section .contain .content .product #books table img, section .contain .content .product #tools table img, .edit-container .contain .content .product #books table img, .edit-container .contain .content .product #tools table img {
+  width: 50px;
+  height: 50px;
+}
+
+.customer, .Recurring, .supplier, .product, .Order {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* End BookStoreHome Page*/
+/* Start Add page */
+.edit-container form {
+  width: 100%;
+  border: 1px solid white;
+  margin-top: 2rem;
+}
+
+.edit-container form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+}
+
+.edit-container form .form-group label {
+  line-height: 38px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12%;
+          flex: 0 0 12%;
+}
+
+.edit-container form .form-group h5 {
+  width: 100%;
+}
+
+.edit-container form .form-group h5 i {
+  font-size: 1rem;
+  padding: 0 2rem 0 0;
+}
+
+.edit-container form.Order-form .form-group:nth-child(3) {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.edit-container form.Order-form .form-group:nth-child(3) .row {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  margin-bottom: 1rem;
+}
+
+.edit-container form.Order-form .form-group:nth-child(3) .row.add-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.edit-container form.Order-form .form-group:nth-child(3) .row.add-head i {
+  background-color: var(--main-color);
+  line-height: 40px;
+  padding: 0 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.edit-container form.Order-form .form-group:nth-child(3) .row.add-head p {
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.edit-container form.show {
+  display: block;
+}
+
+.Supplier-form, .Customer-form, .recurring-form, .Order-form, .Products-form {
+  display: none;
+}
+
+form#Products input[type="file"] {
+  width: 100%;
+  margin: auto;
+}
+
+/* End Add page */
+/*# sourceMappingURL=BookStoreStyle.css.map */
